@@ -68,6 +68,12 @@
         .head__lang {
             margin-right:33px;  
         }
+        &::before {
+            font-family: 'globe';
+            content: '\e832'; 
+            font-size: 20px;
+            color:$icon-color;
+        }
     }
 
     //  Log in and Sing up box
