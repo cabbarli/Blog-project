@@ -612,11 +612,12 @@
 //===========================================================
 
 .access {
-    background-color: #FFF2AF;
+    background-color: #FFE16A;
     text-align: center;
     padding-top: 56px ;
     padding-bottom: 80px;
     height: 376px;
+    position: relative;
   .access__title{
     line-height: $line-h40;
     font-style: $font-normal;
@@ -632,9 +633,9 @@
   .access__info-box{
        display: flex;
        justify-content: space-around;
-
      }
   .access__info-inner {
+    z-index: 2;
     background-color: $back-c-blue;
     border-radius: 16px;
     width: 240px;
@@ -662,6 +663,11 @@
             weight:$font-400;
          }
     }
+  }
+  .access__vektor-yellow {
+    z-index: 1;
+    position: absolute;
+    top:0;
   }
 }
 
@@ -814,10 +820,11 @@
  //==========================================================
 
  .growtraffic {
- 
+    position: relative;
     .growtraffic__container {
+        border-radius: 16px;
         background-color: $background-y;
-        padding: 44px 68px;
+        padding: 48px 64px 64px 64px;
         display: flex;
         margin: 173px 216px 104px 216px;
         .growtraffic__container-inner{
@@ -879,7 +886,12 @@
             }
          }
        }
-    }
+    .growtraffic__circle-img{
+        position: absolute;
+        bottom: -5px;
+        margin-left: -64px;
+     }
+   }
  }
 
   // ========================= Footer =======================
