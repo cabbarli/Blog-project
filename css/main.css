@@ -631,6 +631,14 @@ ul {
   bottom: 50px;
 }
 
+.header .header__plus-img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 112px;
+  bottom: 342px;
+}
+
 .features {
   text-align: center;
 }
