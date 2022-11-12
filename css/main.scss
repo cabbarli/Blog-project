@@ -240,6 +240,7 @@
 
 .features {
     text-align: center;
+    position: relative;
     .features__container {
       background-color: #EDF1F7;
       padding: 25px;
@@ -288,6 +289,18 @@
             color:$light-blue;
             margin-bottom: 64px;
         }
+    }
+    .features__plusframe {
+        position: absolute;
+        width: 244px;
+        height: 114px;
+        top: 32px;
+        right: 76px;
+    }
+    .features__vektor {
+        position: absolute;
+        top: 0;
+        margin: auto;
     }
 }
  

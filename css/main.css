@@ -641,6 +641,7 @@ ul {
 
 .features {
   text-align: center;
+  position: relative;
 }
 
 .features .features__container {
@@ -692,6 +693,20 @@ ul {
   line-height: 24px;
   color: #8F9BB3;
   margin-bottom: 64px;
+}
+
+.features .features__plusframe {
+  position: absolute;
+  width: 244px;
+  height: 114px;
+  top: 32px;
+  right: 76px;
+}
+
+.features .features__vektor {
+  position: absolute;
+  top: 0;
+  margin: auto;
 }
 
 .howwork__container > div {
