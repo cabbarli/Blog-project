@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul {
@@ -398,6 +398,10 @@ ul {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-globe:before {
+  content: '\e832';
+}
+
 /* '' */
 .head {
   font-weight: 400;
@@ -410,7 +414,7 @@ ul {
 .head .head__right-box {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 
 .head .head__logo {
@@ -542,6 +546,8 @@ ul {
 
 .header .header__title {
   width: 800px;
+  margin-bottom: 32px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -1078,13 +1084,14 @@ ul {
 
 .testimonals .testimonals__container {
   padding: 128px 112px 104px 112px;
-  text-align: center;
+  text-align: left;
 }
 
 .testimonals .testimonals__container .testimonals__container-title {
   color: #222B45;
   line-height: 40px;
   margin-bottom: 80px;
+  text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -1100,10 +1107,6 @@ ul {
   margin-right: 48px;
 }
 
-.testimonals .testimonals__container .testimonals__container-inner div:nth-of-type(1) {
-  margin-right: 32px;
-}
-
 .testimonals .testimonals__container .testimonals__container-inner button:nth-of-type(2) {
   margin-left: 48px;
 }
@@ -1117,6 +1120,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 200ms all;
+}
+
+.testimonals .testimonals__container .testimonals__button:hover {
+  background-color: #8F9BB3;
+  color: white;
 }
 
 .testimonals .testimonals__container .testimonals__icon-right::before {
@@ -1130,73 +1139,76 @@ ul {
 }
 
 .testimonals .testimonals__container .testimonals__personinfobox {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background: #FFFFFF;
   border: 1px solid #E4E9F2;
   border-radius: 8px;
   padding: 40px;
   width: 488px;
   height: 340px;
-}
-
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox {
-  width: 408px;
-  max-height: 144px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox:nth-of-type(1) {
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox {
+  display: flex;
+}
+
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox:nth-of-type(1) {
   margin-bottom: 28px;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__personpicture {
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__personpicture {
   width: 80px;
   height: 80px;
+}
+
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__personpicture img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__personpicture img {
-  width: 100%;
-  height: 100%;
-}
-
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__name-job {
-  margin-left: 24px;
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__name-job {
+  margin-left: 32px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__name-job .testimonals__personname {
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__name-job .testimonals__personname {
   color: #222B45;
   z-index: 2;
-  margin-left: 8px;
+  margin-bottom: 0;
   font-style: normal;
   font-size: 24px;
   font-weight: 600;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__name-job .testimonals__personname-backcolor {
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__name-job .testimonals__personname-backcolor {
   background-color: #FFD339;
   width: 156px;
   height: 16px;
   display: inline-block;
+  bottom: 42px;
   position: absolute;
   z-index: 1;
-  margin-bottom: 14px;
+  left: -10px;
 }
 
-.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__name-job .testimonals__personjobname {
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-profilbox .testimonals__name-job .testimonals__personjobname {
   color: #8F9BB3;
+  margin-top: 3px;
   line-height: 24px;
-  margin-top: 7px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+}
+
+.testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox {
+  width: 408px;
+  max-height: 144px;
 }
 
 .testimonals .testimonals__container .testimonals__personinfobox .testimonals__personinfobox-innerbox .testimonals__personabout {
@@ -1311,6 +1323,10 @@ ul {
   justify-content: space-around;
 }
 
+.footer .footer__inner ul {
+  padding-left: 0;
+}
+
 .footer .footer__inner .footer__title {
   color: #2E3A59;
   line-height: 28px;
@@ -1333,7 +1349,7 @@ ul {
 }
 
 .footer .footer__inner a:hover {
-  text-decoration: underline gray 1px;
+  text-decoration: underline gray 1px !important;
   color: #034ae3;
 }
 

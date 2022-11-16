@@ -15,7 +15,7 @@
     .head__right-box {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items:baseline;
     }
     .head__logo {
         width: 152px;
@@ -142,6 +142,8 @@
 
     .header__title  {
         width: 800px;
+        margin-bottom: 32px;
+        margin-top: 100px;
         text-align: center;
         h1{
             font-style: normal;
@@ -677,11 +679,12 @@
 .testimonals {
     .testimonals__container{
         padding: 128px 112px 104px 112px;
-        text-align: center;
+        text-align: left;
     .testimonals__container-title{
         color: $font-color2;
         line-height: $line-h40;
         margin-bottom: 80px;
+        text-align: center;
         font: {
             style:$font-normal;
             weight:$font-600;
@@ -694,9 +697,6 @@
         align-items: center;
         & button:nth-of-type(1) {
             margin-right: 48px;
-        }
-        & div:nth-of-type(1) {
-            margin-right: 32px;
         }
         & button:nth-of-type(2) {
             margin-left: 48px;
@@ -713,6 +713,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 200ms all;
+        &:hover {
+            background-color: #8F9BB3;
+            color: white;
+        }
     } 
     .testimonals__icon-right::before {
         font-family: 'icon-up-button';
@@ -723,42 +728,40 @@
         content: '\e803';
     } 
     .testimonals__personinfobox {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
             background: #FFFFFF;
             border: 1px solid #E4E9F2;
             border-radius: 8px;
             padding: 40px;
             width: 488px;
             height: 340px;
-        .testimonals__personinfobox-innerbox {
-            width: 408px;
-            max-height: 144px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: left;
+            .testimonals__personinfobox-profilbox {
+                display: flex;
             &:nth-of-type(1){
                 margin-bottom: 28px;
             }
+        
             .testimonals__personpicture {
                 width: 80px;
-                height: 80px;
-                border-radius: 50%;
+                height: 80px;            
                 img {
                     width: 100%;
                     height: 100%;
+                    border-radius: 50%;
                 }
-            }
+            } 
             .testimonals__name-job {
-                margin-left: 24px;
+                    margin-left: 32px;
                     position: relative;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: end;
                     .testimonals__personname{
                         color:$font-color2;
                         z-index: 2;
-                        margin-left: 8px;
+                        margin-bottom: 0;
                         font: {
                             style:$font-normal;
                             size:$font-24;
@@ -770,21 +773,26 @@
                         width: 156px;
                         height: 16px;
                         display: inline-block;
+                        bottom: 42px;
                         position: absolute;
                         z-index: 1;
-                        margin-bottom: 14px;
+                        left: -10px;
                     }
                     .testimonals__personjobname {
                         color:  #8F9BB3;
+                        margin-top: 3px;
                         line-height: $line-h24;
-                        margin-top: 7px;
                         font: {
                             style:$font-normal;
                             weight:$font-400;
                             size:$font-16;
                         }
                     }
-            }
+               }  
+          }
+           .testimonals__personinfobox-innerbox {
+            width: 408px;
+            max-height: 144px;
             .testimonals__personabout {
                 color: #2E3A59;
                 font: {
@@ -793,7 +801,7 @@
                     size:$font-16;
                 }
             }
-    }
+          }
   }
  }
 }
@@ -903,6 +911,9 @@
     display: flex;
     margin-bottom: 96px;
     justify-content: space-around;
+    ul {
+        padding-left: 0;
+    }
     .footer__title {
         color: #2E3A59;
         line-height: $line-h28;
@@ -925,7 +936,7 @@
             size:$font-16;
         }
         &:hover {
-            text-decoration: underline gray 1px;
+            text-decoration: underline gray 1px !important;
             color: #034ae3;
         }
     }
