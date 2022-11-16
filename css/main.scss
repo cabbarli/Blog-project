@@ -96,7 +96,7 @@
             margin-right: 16px;
             border: 1px solid #C5CEE0;
             width: 92px;
-            height: 40px;
+            line-height: $line-h40;
             display: inline-block;
             transition: 250ms all;
             &:hover {
@@ -108,7 +108,7 @@
         .head__singup {
             background-color: #FFD339;
             width: 101px;
-            height: 40px;
+            line-height:$line-h40;                                        
             display: inline-block;
             transition: 250ms all;
             &:hover {

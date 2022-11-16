@@ -398,10 +398,6 @@ ul {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-globe:before {
-  content: '\e832';
-}
-
 /* '' */
 .head {
   font-weight: 400;
@@ -503,7 +499,7 @@ ul {
   margin-right: 16px;
   border: 1px solid #C5CEE0;
   width: 92px;
-  height: 40px;
+  line-height: 40px;
   display: inline-block;
   transition: 250ms all;
 }
@@ -517,7 +513,7 @@ ul {
 .head .head__login-singup-box ul .head__singup {
   background-color: #FFD339;
   width: 101px;
-  height: 40px;
+  line-height: 40px;
   display: inline-block;
   transition: 250ms all;
 }
