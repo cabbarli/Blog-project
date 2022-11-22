@@ -1035,3 +1035,21 @@
     }
   }
 }
+
+// =========== blog-innerpages ==============
+// ==========================================
+.blog-pages__inner {
+    width: 800px;
+    .blog-pages__title {
+        line-height: $line-h40;
+        vertical-align: top;
+        margin-top: 57px;
+        color: $font-color2;
+        margin-bottom: 77px;
+        font: {
+            size:$font-34;
+            style:medium;
+            weight:$font-400;
+        }
+    }
+}

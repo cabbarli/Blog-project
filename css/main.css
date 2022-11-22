@@ -22,6 +22,11 @@ ul {
   list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: 'icon-up-button';
   src: url("../font/icon-up-button.eot?59483062");
@@ -1451,4 +1456,19 @@ ul {
   line-height: 24px;
   font-weight: 400;
   font-size: 14px;
+}
+
+.blog-pages__inner {
+  width: 800px;
+}
+
+.blog-pages__inner .blog-pages__title {
+  line-height: 40px;
+  vertical-align: top;
+  margin-top: 57px;
+  color: #222B45;
+  margin-bottom: 77px;
+  font-size: 34px;
+  font-style: medium;
+  font-weight: 400;
 }
