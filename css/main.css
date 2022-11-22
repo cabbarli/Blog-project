@@ -22,11 +22,6 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
   font-family: 'icon-up-button';
   src: url("../font/icon-up-button.eot?59483062");
@@ -104,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "icon";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -160,7 +154,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "icon";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -216,7 +209,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "copy";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -267,7 +259,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "shopping";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -318,7 +309,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "check";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -379,7 +369,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "globe";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -408,6 +397,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* '' */
+@font-face {
+  font-family: 'eye';
+  src: url("../font/eye.eot?63146936");
+  src: url("../font/eye.eot?63146936#iefix") format("embedded-opentype"), url("../font/eye.woff2?63146936") format("woff2"), url("../font/eye.woff?63146936") format("woff"), url("../font/eye.ttf?63146936") format("truetype"), url("../font/eye.svg?63146936#eye") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'eye';
+      src: url('../font/eye.svg?63146936#eye') format('svg');
+    }
+  }
+  */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "eye";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-icon:before {
+  content: '\e836';
+}
+
+/* '' */
 .head {
   font-weight: 400;
   padding: 20px 5px;
@@ -1471,4 +1510,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   font-style: medium;
   font-weight: 400;
+}
+
+.blog-pages__inner .blog-pages_date, .blog-pages__inner .blog-pages_watch {
+  line-height: 20px;
+  color: #8F9BB3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.blog-pages__inner .blog-pages_watch:before {
+  content: '\e836';
+  font-family: "eye";
 }

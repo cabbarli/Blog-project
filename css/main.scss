@@ -1052,4 +1052,16 @@
             weight:$font-400;
         }
     }
+    .blog-pages_date, .blog-pages_watch {
+        line-height: $line-h20;
+        color: $date-color;
+        font: {
+            size:$font-14;
+            weight:$font-400;
+        }
+    }
+    .blog-pages_watch:before {
+        content: '\e836'; 
+        font-family: "eye";
+    }
 }
