@@ -1497,6 +1497,10 @@ ul {
   font-size: 14px;
 }
 
+.head_link:hover {
+  border-bottom: 3px solid #FFD339;
+}
+
 .blog-pages__inner {
   width: 800px;
 }

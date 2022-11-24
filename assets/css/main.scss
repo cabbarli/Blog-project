@@ -1037,7 +1037,9 @@
 }
 
 // =========== blog-pages ==============
-// ==========================================
+.head_link:hover {
+    border-bottom: 3px solid $background-y;
+}
 .blog-pages__inner {
     width: 800px;
     .blog-pages__title {
