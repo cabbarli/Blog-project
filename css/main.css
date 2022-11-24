@@ -1506,7 +1506,7 @@ ul {
   vertical-align: top;
   margin-top: 57px;
   color: #222B45;
-  margin-bottom: 77px;
+  margin-bottom: 24px;
   font-size: 34px;
   font-style: medium;
   font-weight: 400;
@@ -1522,4 +1522,17 @@ ul {
 .blog-pages__inner .blog-pages_watch:before {
   content: '\e836';
   font-family: "eye";
+  margin-left: 26px;
+}
+
+.blog-pages__inner .blog-pages__img {
+  width: 800px;
+  height: 420px;
+  margin-top: 42px;
+  margin-bottom: 48px;
+}
+
+.blog-pages__inner .blog-pages__img img {
+  width: 100%;
+  height: 100%;
 }
