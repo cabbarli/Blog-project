@@ -507,7 +507,7 @@ ul {
   font-weight: 400;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 
 .head .head__right-box {
