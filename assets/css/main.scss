@@ -8,10 +8,10 @@
 
 .head {
     font-weight: $font-400;
-    padding: 20px 5px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     .head__right-box {
         display: flex;
         justify-content: space-around;
@@ -32,8 +32,10 @@
     .head__menu-ul {
         list-style: none;
         display: flex; 
+        margin-bottom: 0;
         li {
             margin-right: 48px;
+            height: 59px;
             a{
                 line-height: $line-h24;
                 color: $font-color;

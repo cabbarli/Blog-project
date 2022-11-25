@@ -449,10 +449,10 @@ ul {
 /* '' */
 .head {
   font-weight: 400;
-  padding: 20px 5px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 
 .head .head__right-box {
@@ -477,10 +477,12 @@ ul {
 .head .head__menu .head__menu-ul {
   list-style: none;
   display: flex;
+  margin-bottom: 0;
 }
 
 .head .head__menu .head__menu-ul li {
   margin-right: 48px;
+  height: 59px;
 }
 
 .head .head__menu .head__menu-ul li a {
