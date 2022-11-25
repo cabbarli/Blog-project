@@ -906,17 +906,17 @@
 
   // ========================= Footer =======================
  //==========================================================
-.footer {
+footer {
   background: #F7F9FC;
   padding: 67px 67px 26px 67px;
- .footer__inner {
+ .ftr__inner {
     display: flex;
     margin-bottom: 96px;
     justify-content: space-around;
     ul {
         padding-left: 0;
     }
-    .footer__title {
+    .ftr__title {
         color: #2E3A59;
         line-height: $line-h28;
         margin-bottom: 23px;
@@ -945,7 +945,7 @@
 
  }
  //footer icon
- .footer__icon {
+ .ftr__icon {
   ul{  
   display: flex;
   justify-content: center;
@@ -988,19 +988,19 @@
     }
   }
   }
-  .footer__facebook-icon::before {
+  .ftr__facebook-icon::before {
     font-family: "icon";
     content: '\e806'; 
   }
-  .footer__instagram-icon::before {
+  .ftr__instagram-icon::before {
     content: '\f16d';
     font-family: "icon";
   }
-  .footer__twitter-icon::before {
+  .ftr__twitter-icon::before {
     content: '\e81c';
     font-family: "icon2";
   }
-  .footer__youtube-icon::before {
+  .ftr__youtube-icon::before {
     content: '\e818';
     font-family: "icon2";
   }
@@ -1009,7 +1009,7 @@
 
 // footer copyright
 
-.footer__rightabout-box {
+.ftr__rightabout-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1020,7 +1020,7 @@
     color: $icon-color;
     font-size: 18px;
   }
-  .footer__copyright-icon{
+  .ftr__copyright-icon{
     margin-right: 11px;
     width: 24px;
     height: 24px;
@@ -1029,7 +1029,7 @@
     justify-content: center;
     align-items: center;
   }
-  .footer__right-text{
+  .ftr__right-text{
     line-height: $line-h24;
     font: {
         weight:$font-400;
