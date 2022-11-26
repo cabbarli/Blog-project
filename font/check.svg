@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="check" horiz-adv-x="1000" >
+<font-face font-family="check" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="check" unicode="&#xe82e;" d="M676 610c-13 0-25-5-33-14l-195-195-94 71h0c-11 9-24 12-37 11-13-2-25-9-32-19-8-11-12-24-9-37 2-13 9-24 20-32l128-96 0 0c9-6 21-10 32-9 12 1 23 6 31 14l224 224c9 9 14 21 14 34 0 13-5 26-14 35-10 9-22 14-35 13z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

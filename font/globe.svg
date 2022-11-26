@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="globe" horiz-adv-x="1000" >
+<font-face font-family="globe" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="globe-(2)" unicode="&#xe832;" d="M917 350a417 417 0 0 1-417 417 417 417 0 0 1 0-834 417 417 0 0 1 417 417z m-87 42h-122a538 538 0 0 1-97 272 333 333 0 0 0 219-272z m-452-84h247a477 477 0 0 0-125-275 458 458 0 0 0-122 275z m0 84a475 475 0 0 0 122 275 466 466 0 0 0 125-275z m15 273a549 549 0 0 1-98-273h-125a333 333 0 0 0 223 273z m-223-357h125a536 536 0 0 1 98-273 333 333 0 0 0-223 273z m439-273a548 548 0 0 1 99 273h123a333 333 0 0 0-222-273z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
