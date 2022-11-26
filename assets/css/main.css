@@ -20,6 +20,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 @font-face {
@@ -447,6 +449,72 @@ ul {
 }
 
 /* '' */
+@font-face {
+  font-family: 'icon-blog_pages-sosial';
+  src: url("../font/icon-blog_pages-sosial.eot?92764428");
+  src: url("../font/icon-blog_pages-sosial.eot?92764428#iefix") format("embedded-opentype"), url("../font/icon-blog_pages-sosial.woff2?92764428") format("woff2"), url("../font/icon-blog_pages-sosial.woff?92764428") format("woff"), url("../font/icon-blog_pages-sosial.ttf?92764428") format("truetype"), url("../font/icon-blog_pages-sosial.svg?92764428#icon-blog_pages-sosial") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'icon-blog_pages-sosial';
+      src: url('../font/icon-blog_pages-sosial.svg?92764428#icon-blog_pages-sosial') format('svg');
+    }
+  }
+  */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icon-blog_pages-sosial";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-icon:before {
+  content: '\e83a';
+}
+
+/* '' */
+.icon-icon:before {
+  content: '\e83b';
+}
+
+/* '' */
+.icon-icon:before {
+  content: '\e83c';
+}
+
+/* '' */
+.icon-icon:before {
+  content: '\e83d';
+}
+
+/* '' */
 .head {
   font-weight: 400;
   margin-top: 25px;
@@ -1541,4 +1609,98 @@ footer .ftr__icon .ftr__youtube-icon::before {
 .blog-pages__inner .blog-pages__img img {
   width: 100%;
   height: 100%;
+}
+
+.blog-pages__inner .blog-pages__text p {
+  line-height: 24px;
+  color: #2E3A59;
+  font-weight: 400;
+  size: 16px;
+}
+
+.blog-pages__inner .blog-pages__text h3 {
+  line-height: 24px;
+  color: #2E3A59;
+  font-weight: 400;
+  size: 24px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox {
+  margin-top: 64px;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox a {
+  margin-right: 28px;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox .blog-pages__share-on {
+  line-height: 28px;
+  color: #2E3A59;
+  margin-right: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox .blog-pages__icon-github:before {
+  content: '\e83a';
+  font-family: 'icon-blog_pages-sosial';
+  color: #192038;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox .blog-pages__icon-facebook:before {
+  content: '\e83b';
+  font-family: 'icon-blog_pages-sosial';
+  color: #0095FF;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox .blog-pages__icon-twitter:before {
+  content: '\e83c';
+  font-family: 'icon-blog_pages-sosial';
+  color: #42AAFF;
+}
+
+.blog-pages__inner .blog-pages__sosial-linkbox .blog-pages__icon-globe:before {
+  content: '\e83d';
+  font-family: 'icon-blog_pages-sosial';
+  color: #00D68F;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box {
+  margin-top: 42px;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box span {
+  line-height: 28px;
+  color: #2E3A59;
+  margin-right: 14px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box .blog-pages__similiarTopics-link {
+  padding: 3px 16px;
+  color: #3366FF;
+  display: inline-block;
+  align-content: center;
+  background-color: rgba(51, 102, 255, 0.08);
+  border: 1px solid #3366FF;
+  border-radius: 25px;
+  margin-right: 8px;
+  transition: 200ms all;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box .blog-pages__similiarTopics-link a {
+  line-height: 24px;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box .blog-pages__similiarTopics-link:hover {
+  background-color: #3366FF;
+}
+
+.blog-pages__inner .blog-pages__similiarTopics-box .blog-pages__similiarTopics-link:hover a {
+  color: #ffffff;
 }

@@ -1077,4 +1077,86 @@ footer {
             height: 100%;
         }
     }
+    .blog-pages__text p {
+        @include font-features;
+        size:$font-16;
+    }
+    .blog-pages__text h3 {
+        @include font-features;
+        size:$font-24;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .blog-pages__sosial-linkbox {
+        margin-top: 64px;
+        a {
+            margin-right: 28px;
+        }
+        .blog-pages__share-on {
+            line-height: $line-h28;
+            color: $font-color;
+            margin-right: 24px;
+            font: {
+                size:$font-20;
+                weight:$font-400;
+            }
+        }
+        .blog-pages__icon-github:before {
+        content: '\e83a';
+        font-family: 'icon-blog_pages-sosial';
+        color: $icon-black;
+    }
+    .blog-pages__icon-facebook:before {
+        content: '\e83b';
+        font-family: 'icon-blog_pages-sosial';
+        color:$icon-blue1;
+    }
+    .blog-pages__icon-twitter:before {
+        content: '\e83c';
+        font-family: 'icon-blog_pages-sosial';
+        color:$icon-blue2;
+    }
+    .blog-pages__icon-globe:before {
+        content: '\e83d';
+        font-family: 'icon-blog_pages-sosial';
+        color:$icon-green;
+    }
+  }
+  .blog-pages__similiarTopics-box {
+    margin-top: 42px;
+     span {
+        line-height: $line-h28;
+        color: $font-color;
+        margin-right: 14px;
+        font: {
+            size:$font-20;
+            weight:$font-400;
+        }
+     }
+     .blog-pages__similiarTopics-link {
+        padding: 3px 16px;
+        color: $font-color3;
+        display: inline-block;
+        align-content: center;
+        background-color:rgba(51, 102, 255, 0.08);
+        border:1px solid #3366FF;
+        border-radius: 25px;
+        margin-right: 8px;
+        transition: 200ms all;
+        font: {
+            size:$font-16;
+            weight:$font-400;
+        }
+        a {
+            line-height: $line-h24;
+        }
+        &:hover {
+            background-color:#3366FF;
+            a {
+            color: #ffffff;
+            }        
+        }
+     }
+  }
 }

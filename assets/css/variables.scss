@@ -17,11 +17,23 @@ $border-8: 8px;
 $background-y: #FFD339;
 $background-w:#FFFFFF;
 $font-color2:#222B45;
-$font-colo3:#8F9BB3;
+$font-color3:#8F9BB3;
 $white:white;
 $light-blue: #8F9BB3;
 $background-g: #E4E9F2;
 $back-c-blue:#222b45;
 
 // blog-pages
+$icon-blue1:#0095FF;
+$icon-blue2:#42AAFF;
+$icon-green:#00D68F;
+$icon-black:#192038;
 $date-color:#8F9BB3;
+$font-color3:#3366FF;
+@mixin font-features {
+line-height: $line-h24;
+color:$font-color;
+font: {
+    weight:$font-400;
+ }
+}
