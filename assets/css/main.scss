@@ -1160,12 +1160,16 @@ footer {
      }
   }
 }
+
+// =========== SIMILIAR BLOGS ============
+
 .blog__title { 
     color: $font-color2;
     line-height: $line-h40;
     margin-bottom: 72px;
     margin-top: 32px;
     font: {
+     weight:$font-400;   
      size:$font-34;
      style:medium;
      }

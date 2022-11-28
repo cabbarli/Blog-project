@@ -6,16 +6,16 @@
 }
 body {
  width: 1440px;
- font-family: 'Euclid Circular A';
+ font-family: 'Euclid Circular A' !important;
 }
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 a {
     text-decoration: none !important;
 }
 ul {
-    list-style: none;
+    list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
 }
