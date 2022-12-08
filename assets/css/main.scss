@@ -1259,3 +1259,90 @@ footer {
   }
 }
 
+/* ===== Login-page ===== */
+
+.head__singup-button {
+    a {
+        background-color: #ffffff !important;
+    }
+    border: 1px solid $font-color2;
+    border-radius: $border-8;
+    &:hover a {
+        background-color: #e4ff4a !important;
+        color: blue !important;
+    }
+}
+// login start
+.login {
+    
+    &__sosial {
+        padding-bottom: 52px;
+        padding-left: 0;
+        position: relative;
+        border-bottom: 1px solid  #fc0905;;
+    }
+    //login title start
+    &__title-box {
+        .login__title {
+        line-height: $line-h28;
+        color: $font-color;
+        font: {
+            size:$font-20;
+            weight:$font-400;
+           }
+         }
+        } // login__title end
+    .login__text {
+        line-height: $line-h20;
+        color: #8F9BB3;
+        font: {
+            size: $font-16;
+            weight:$font-400;
+          } 
+        } // login p end
+        // login sosial button start
+    &__sosial-link {
+            position: relative;
+            width: 152px;
+            border:1px solid #cce0c5;
+            border-radius: $border-8;  
+            &:nth-child(1){
+               margin-right: 4px;
+            }
+            &:nth-child(3){
+                margin-left: 4px;
+             }
+            a {
+               width: 100%;
+               line-height: 44px;
+               color: $font-color2;                
+               font: {
+                size:$font-14;
+                weight: $font-400;
+               }         
+            } 
+            // &:before { 
+            //         content:'';
+            //         position: absolute;
+            //         top: 27px;
+            //         width: 150px;
+            //         display: block;
+            //         height: 1px;
+            //         background-color: #E4E9F2;
+            //         position: absolute;
+            //         top: 100px;
+            //         z-index: 3 !important;               
+            // }   
+            img {
+                    margin-right: 8px;
+            }   
+        }
+    &__or {
+        bottom: -10px;
+        width: 78px;
+        background-color: $background-w;
+      }
+    &__form-box {
+        padding-top: 30px;
+    }  
+}
