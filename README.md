@@ -1,1 +1,1 @@
-Blog project
+Blog project (completion is in progress)
