@@ -1,1 +1,1 @@
-# Blog project (completion is in progress)
+# Blog project (Tamamlanma prosesi davam edən layihə)
